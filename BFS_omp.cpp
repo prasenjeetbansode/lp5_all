@@ -82,3 +82,16 @@ int main() {
 
     return 0;
 }
+/* input
+Enter the number of vertices: 6
+Enter the number of edges: 7
+Enter the edges:
+0 1
+0 2
+1 3
+1 4
+2 4
+2 5
+3 5
+Enter the starting vertex: 0
+*/
