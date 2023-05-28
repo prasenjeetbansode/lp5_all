@@ -70,20 +70,13 @@ int main() {
 
     int* traversalArray = new int[numVertices];
 
-    double startTime = omp_get_wtime();
-
     graph.bfs(startVertex, traversalArray);
-
-    double endTime = omp_get_wtime();
-    double executionTime = endTime - startTime;
 
     cout << "BFS traversal: ";
     for (int i = 0; i < numVertices; ++i) {
         cout << traversalArray[i] << " ";
     }
     cout << endl;
-
-    cout << "Execution time: " << executionTime << " seconds" << endl;
 
     delete[] traversalArray;
 
